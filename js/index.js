@@ -76,4 +76,4 @@ function init() {
       mesh.rotation.y += delta * 1.5; 
       renderer.render(scene, camera);
     }
-}
+    )}
