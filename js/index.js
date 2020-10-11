@@ -75,5 +75,5 @@ function init() {
       mesh.rotation.x += delta * 1.0;
       mesh.rotation.y += delta * 1.5; 
       renderer.render(scene, camera);
-    )};
+    });
 }
