@@ -1,6 +1,8 @@
 window.addEventListener('load', init);
+console.log('load js');
 
 function init() {
+    console.log('load init');
     const renderer = new THREE.WebGLRenderer({
         antialias: true,
         alpha: true
@@ -32,6 +34,7 @@ function init() {
     });
 
     function onResize() {
+        console.log('load onresize');
       arToolkitSource.onResizeElement();
       arToolkitSource.copyElementSizeTo(renderer.domElement);
       if (arToolkitContext.arController !== null) {
@@ -73,4 +76,4 @@ function init() {
       mesh.rotation.y += delta * 1.5; 
       renderer.render(scene, camera);
     }
-)}
+}
